@@ -1,0 +1,27 @@
+.menu {
+    width: 100%;
+	display: table;
+	background: aqua;
+    }
+.block-1 {
+    float: left;
+    width: 310px;
+    padding: 10px 10px 10px 10px;
+}
+.block-2 {
+    float: left;
+    padding: 10px 10px 10px 10px;
+}
+.picture_1 img {
+    width: 310px;
+    height: 310px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.heading_1 {
+    font-weight: bold;
+    color: black
+}
+html{
+    background-image: url(./img/background);
+}

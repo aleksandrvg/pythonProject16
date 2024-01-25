@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" style="background-image: url({% static 'img/background.jpg' %})">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <link rel = "stylesheet" href="{% static 'css/stylesheet.css' %}" type="text/css">
+</head>
+<body>
+{% block content %}
+    {% include 'add.html' %}
+    <main>
+        <br>
+        <div class="heading_1">
+            {{ my_str_1 }}
+        </div>
+        <br>
+        <div class="heading_1">
+            {{ my_str_2 }}
+        </div>
+        <br>
+        <div class="block-1">
+            <div class="heading_1">
+                {{ my_str_3 }}
+            </div>
+            <div class="heading_1">
+                {{ my_str_4 }}
+            </div>
+        </div>
+        <div class="block-1">
+            <div class="heading_1">
+                {{ my_str_5 }}
+            </div>
+            <div class="heading_1">
+                {{ my_str_6 }}
+            </div>
+        </div>
+    </main>
+{% endblock %}
+</body>
+</html>

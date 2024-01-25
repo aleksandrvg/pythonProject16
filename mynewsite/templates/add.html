@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel = "stylesheet" href="{% static 'css/stylesheet.css' %}" type="text/css">
+</head>
+<body>
+    <main>
+        <div>
+            <h2>ООО "Покупаем продаем"</h2>
+        </div>
+        <div class="menu">
+            <div class="block-2">
+                <form method="post" action="{% url 'index' %}">
+                    {% csrf_token %}
+                    <button type="submit">Главная</button>
+                </form>
+            </div>
+            <div class="block-2">
+                <form method="post" action="{% url 'aboutus' %}">
+                    {% csrf_token %}
+                    <button type="submit">О нас</button>
+            </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

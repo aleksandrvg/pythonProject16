@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" style="background-image: url({% static 'img/background.jpg' %})">
+<head>
+    <meta charset="UTF-8">
+    <title>Aboutus</title>
+    <link rel = "stylesheet" href="{% static 'css/stylesheet.css' %}" type="text/css">
+</head>
+<body>
+{% block content %}
+    {% include 'add.html' %}
+    <main>
+        <br>
+        <div class="heading_1">
+            {{ my_str_1 }}
+        </div>
+        <br>
+        <div class="heading_1">
+            {{ my_str_2 }}
+        </div>
+        <br>
+        <div class="heading_1">
+            {{ my_str_3 }}
+        </div>
+        <br>
+        <div class="heading_1">
+            {{ my_str_4 }}
+        </div>
+        <br>
+        <div class="picture_1">
+            <img src="{% static 'img/director.jpg' %}">
+        </div>
+    </main>
+{% endblock %}
+</body>
+</html>
